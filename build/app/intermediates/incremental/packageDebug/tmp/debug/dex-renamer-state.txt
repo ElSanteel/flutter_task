@@ -1,4 +1,4 @@
-#Thu Aug 24 18:24:51 EET 2023
+#Thu Aug 24 20:05:27 EET 2023
 base.0=D\:\\EraaSoft_Course\\Tasks\\session_10\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
