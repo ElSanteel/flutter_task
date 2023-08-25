@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:session_10/screens/payment_card.dart';
 
 import '../screens/circle_inside_screen.dart';
 import '../screens/design_4.dart';
@@ -16,12 +17,13 @@ class AppRoot extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: HomeScreen(),
-      home: FourSquares(),
+      // home: FourSquares(),
       // home: EgyptFlag(),
       // home: EgyptFlag2(),
       // home: Circle(),
       // home: Triangle(),
       // home: GradientBackground(),
+      home: Payment(),
     );
   }
 }
