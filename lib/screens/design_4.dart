@@ -15,13 +15,13 @@ class FourSquares extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  width: 150,
-                  height: 190,
+                  width: 100,
+                  height: 100,
                   color: Colors.red,
                 ),
                 Container(
-                  width: 150,
-                  height: 190,
+                  width: 100,
+                  height: 100,
                   color: Colors.red,
                 )
               ],
@@ -30,13 +30,13 @@ class FourSquares extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  width: 150,
-                  height: 190,
+                  width: 100,
+                  height: 100,
                   color: const Color(0xfffff200),
                 ),
                 Container(
-                  width: 150,
-                  height: 190,
+                  width: 100,
+                  height: 100,
                   color: const Color(0xffff7f27),
                 )
               ],

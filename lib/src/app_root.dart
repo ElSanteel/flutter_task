@@ -16,12 +16,12 @@ class AppRoot extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: HomeScreen(),
-      // home: FourSquares(),
+      home: FourSquares(),
       // home: EgyptFlag(),
       // home: EgyptFlag2(),
       // home: Circle(),
       // home: Triangle(),
-      home: GradientBackground(),
+      // home: GradientBackground(),
     );
   }
 }
