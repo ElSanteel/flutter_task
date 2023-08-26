@@ -4,7 +4,7 @@
             "outputFile": "com.example.session_10.app-mergeDebugResources-9:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\EraaSoft_Course\\Tasks\\session_10\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\EraaSoft_Course\\Sessions\\Session 11\\practise\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

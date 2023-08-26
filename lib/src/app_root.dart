@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:session_10/screens/payment_card.dart';
+import 'package:session_10/screens/Session_2_Flutter_Practise/payment_card.dart';
 
-import '../screens/circle_inside_screen.dart';
-import '../screens/design_4.dart';
-import '../screens/egypt_flag_method_number_1.dart';
-import '../screens/egypt_flag_method_number_2.dart';
-import '../screens/gradient_background.dart';
-import '../screens/home_screen.dart';
-import '../screens/triangle_inside_screen.dart';
+import '../screens/Session_1_Flutter_Task/circle_inside_screen.dart';
+import '../screens/Session_1_Flutter_Task//design_4.dart';
+import '../screens/Session_1_Flutter_Task//egypt_flag_method_number_1.dart';
+import '../screens/Session_1_Flutter_Task//egypt_flag_method_number_2.dart';
+import '../screens/Session_1_Flutter_Task//gradient_background.dart';
+import '../screens/Session_1_Flutter_Practise/home_screen.dart';
+import '../screens/Session_1_Flutter_Task/triangle_inside_screen.dart';
 
 class AppRoot extends StatelessWidget {
   const AppRoot({super.key});
