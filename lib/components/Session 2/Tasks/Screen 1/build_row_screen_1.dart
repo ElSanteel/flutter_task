@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 Column buildRow({required String boldText, required String greyedText}) {
   return Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
     children: [
       Text(boldText,
           style: const TextStyle(

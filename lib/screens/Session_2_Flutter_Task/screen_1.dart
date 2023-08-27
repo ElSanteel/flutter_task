@@ -156,20 +156,20 @@ class Screen1 extends StatelessWidget {
                     ),
                     const SizedBox(height: 25),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         buildRow(
                             boldText: "02-02-2019", greyedText: "Start Date"),
+                        const SizedBox(width: 90),
                         buildRow(
                             boldText: "02-02-2020", greyedText: "End Date"),
                       ],
                     ),
                     const SizedBox(height: 20),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         buildRow(
                             boldText: "\$1,300", greyedText: "Rent Amount"),
+                        const SizedBox(width: 140),
                         buildRow(
                             boldText: "\$1,300", greyedText: "Security Amount"),
                       ],
