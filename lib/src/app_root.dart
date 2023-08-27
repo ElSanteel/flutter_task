@@ -11,6 +11,9 @@ import '../screens/Session_1_Flutter_Task/triangle_inside_screen.dart';
 import '../screens/Session_2_Flutter_Task/screen_1.dart';
 import '../screens/Session_2_Flutter_Task/screen_2.dart';
 import '../screens/Session_2_Flutter_Task/screen_3.dart';
+import '../screens/Session_2_Flutter_Task/screen_4.dart';
+import '../screens/Session_2_Flutter_Task/screen_5.dart';
+import '../screens/Session_2_Flutter_Task/screen_6.dart';
 
 class AppRoot extends StatelessWidget {
   const AppRoot({super.key});
@@ -26,9 +29,12 @@ class AppRoot extends StatelessWidget {
       // home: Circle(),
       // home: Triangle(),
       // home: GradientBackground(),
-      // home: Screen1(),
+      home: Screen1(),
       // home: Screen2(),
-      home: Screen3(),
+      // home: Screen3(),
+      // home: Screen4(),
+      // home: Screen5(),
+      // home: Screen6());
     );
   }
 }
