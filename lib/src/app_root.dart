@@ -8,6 +8,7 @@ import '../screens/Session_1_Flutter_Task//egypt_flag_method_number_2.dart';
 import '../screens/Session_1_Flutter_Task//gradient_background.dart';
 import '../screens/Session_1_Flutter_Practise/home_screen.dart';
 import '../screens/Session_1_Flutter_Task/triangle_inside_screen.dart';
+import '../screens/Session_2_Flutter_Task/screen_1.dart';
 
 class AppRoot extends StatelessWidget {
   const AppRoot({super.key});
@@ -15,15 +16,14 @@ class AppRoot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      // home: HomeScreen(),
-      // home: FourSquares(),
-      // home: EgyptFlag(),
-      // home: EgyptFlag2(),
-      // home: Circle(),
-      // home: Triangle(),
-      // home: GradientBackground(),
-      home: Payment(),
-    );
+        debugShowCheckedModeBanner: false,
+        // home: HomeScreen(),
+        // home: FourSquares(),
+        // home: EgyptFlag(),
+        // home: EgyptFlag2(),
+        // home: Circle(),
+        // home: Triangle(),
+        // home: GradientBackground(),
+        home: Screen1());
   }
 }
