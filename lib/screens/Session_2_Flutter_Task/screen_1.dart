@@ -40,7 +40,7 @@ class Screen1 extends StatelessWidget {
                         child: CircleAvatar(
                           radius: 40,
                           backgroundImage: AssetImage(
-                            "assets/download.jpeg",
+                            "assets/images/man.png",
                           ),
                         ),
                       ),
