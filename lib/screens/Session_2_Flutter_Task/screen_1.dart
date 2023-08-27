@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../components/build_container.dart';
-import '../../components/build_row.dart';
-import '../../components/cart_item.dart';
+import '../../components/Session 2/Tasks/Screen 1/build_container_screen_1.dart';
+import '../../components/Session 2/Tasks/Screen 1/build_row_screen_1.dart';
+import '../../components/Session 2/example/cart_item.dart';
 
 class Screen1 extends StatelessWidget {
   const Screen1({Key? key}) : super(key: key);
