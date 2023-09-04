@@ -23,10 +23,6 @@ class AppRoot extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-          textTheme: GoogleFonts.sacramentoTextTheme(
-        Theme.of(context).textTheme,
-      )),
 
       // home: HomeScreen(),
       // home: FourSquares(),
