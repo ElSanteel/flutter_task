@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Container buildContainerScreen5(
     {required String timeType,
@@ -33,7 +34,9 @@ Container buildContainerScreen5(
         ),
         Text(
           prayName,
-          style: const TextStyle(color: Colors.white, fontSize: 30),
+          // style: GoogleFonts.rakkas(color: Colors.white, fontSize: 25),
+          // style: GoogleFonts.arefRuqaa(color: Colors.white, fontSize: 25),
+          style: GoogleFonts.gulzar(color: Colors.white, fontSize: 25),
         )
       ],
     ),

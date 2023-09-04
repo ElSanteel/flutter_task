@@ -14,14 +14,20 @@ import '../screens/Session_2_Flutter_Task/screen_3.dart';
 import '../screens/Session_2_Flutter_Task/screen_4.dart';
 import '../screens/Session_2_Flutter_Task/screen_5.dart';
 import '../screens/Session_2_Flutter_Task/screen_6.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppRoot extends StatelessWidget {
   const AppRoot({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          textTheme: GoogleFonts.sacramentoTextTheme(
+        Theme.of(context).textTheme,
+      )),
+
       // home: HomeScreen(),
       // home: FourSquares(),
       // home: EgyptFlag(),
@@ -29,11 +35,11 @@ class AppRoot extends StatelessWidget {
       // home: Circle(),
       // home: Triangle(),
       // home: GradientBackground(),
-      home: Screen1(),
+      // home: Screen1(),
       // home: Screen2(),
       // home: Screen3(),
       // home: Screen4(),
-      // home: Screen5(),
+      home: Screen5(),
       // home: Screen6());
     );
   }

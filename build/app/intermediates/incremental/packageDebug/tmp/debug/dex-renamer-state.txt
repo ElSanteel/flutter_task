@@ -1,4 +1,4 @@
-#Sun Aug 27 18:54:03 EET 2023
-base.0=D\:\\EraaSoft_Course\\Tasks\\Flutter Sessions\\session_11\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Mon Sep 04 16:03:20 EET 2023
+base.0=D\:\\EraaSoft_Course\\Tasks\\Flutter Sessions\\session_12\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
