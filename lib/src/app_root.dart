@@ -15,6 +15,7 @@ import '../screens/Session_2_Flutter_Task/screen_3.dart';
 import '../screens/Session_2_Flutter_Task/screen_4.dart';
 import '../screens/Session_2_Flutter_Task/screen_5.dart';
 import '../screens/Session_2_Flutter_Task/screen_6.dart';
+import '../screens/Session_4_Flutter_Practise/trying_setstate.dart';
 
 class AppRoot extends StatelessWidget {
   const AppRoot({super.key});
@@ -22,21 +23,23 @@ class AppRoot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
 
-        // home: HomeScreen(),
-        // home: FourSquares(),
-        // home: EgyptFlag(),
-        // home: EgyptFlag2(),
-        // home: Circle(),
-        // home: Triangle(),
-        // home: GradientBackground(),
-        // home: Screen1(),
-        // home: Screen2(),
-        // home: Screen3(),
-        // home: Screen4(),
-        // home: Screen5(),
-        // home: Screen6()),
-        home: Edeka());
+      // home: HomeScreen(),
+      // home: FourSquares(),
+      // home: EgyptFlag(),
+      // home: EgyptFlag2(),
+      // home: Circle(),
+      // home: Triangle(),
+      // home: GradientBackground(),
+      // home: Screen1(),
+      // home: Screen2(),
+      // home: Screen3(),
+      // home: Screen4(),
+      // home: Screen5(),
+      // home: Screen6()),
+      home: TryingSetState(),
+      // home: Edeka(),
+    );
   }
 }
