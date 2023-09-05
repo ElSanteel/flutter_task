@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CardItem extends StatelessWidget {
-  var color;
-  var icon;
+  Color color;
+  IconData icon;
   String text;
 
   CardItem(this.color, this.icon, this.text, {super.key});

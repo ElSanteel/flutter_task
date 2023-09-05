@@ -10,18 +10,18 @@ Column buildColumn(
         children: [
           Icon(
             icon,
-            color: Color(0xff584ada),
+            color: const Color(0xff584ada),
           ),
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
           Text(
             number,
-            style: TextStyle(color: Color(0xff584ada)),
+            style: const TextStyle(color: Color(0xff584ada)),
           )
         ],
       ),
       Text(
         greyedText,
-        style: TextStyle(color: Colors.grey),
+        style: const TextStyle(color: Colors.grey),
       )
     ],
   );
