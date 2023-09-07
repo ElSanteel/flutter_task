@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../components/Session 3/build_category.dart';
+import '../../components/Session 3 and Session 4/build_category.dart';
 
 class Edeka extends StatefulWidget {
   const Edeka({Key? key}) : super(key: key);

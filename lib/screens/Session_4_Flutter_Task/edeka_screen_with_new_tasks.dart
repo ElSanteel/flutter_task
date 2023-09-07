@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../components/Session 3/build_category.dart';
+import '../../components/Session 3 and Session 4/build_category.dart';
 
 class EdekaWithNewTasks extends StatefulWidget {
   const EdekaWithNewTasks({Key? key}) : super(key: key);
@@ -392,7 +392,7 @@ class _EdekaWithNewTasksState extends State<EdekaWithNewTasks> {
                         ),
                       ),
                       IconButton(
-                        icon: Icon(Icons.remove),
+                        icon: const Icon(Icons.remove),
                         onPressed: () {
                           // Decrement the total amount
                           setState(() {
@@ -402,7 +402,7 @@ class _EdekaWithNewTasksState extends State<EdekaWithNewTasks> {
                       ),
                       Text("$counter"),
                       IconButton(
-                        icon: Icon(Icons.add),
+                        icon: const Icon(Icons.add),
                         onPressed: () {
                           setState(() {
                             counter++;
