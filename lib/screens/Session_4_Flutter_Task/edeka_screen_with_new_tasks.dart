@@ -70,6 +70,7 @@ class _EdekaWithNewTasksState extends State<EdekaWithNewTasks> {
   ];
   bool isFavourite = true;
   double totalAmount = 0.0; // Variable to track the total amount
+  int counter = 0;
 
   // Function to update the total amount when an item is added
   void addToTotal(double amount) {
@@ -347,81 +348,104 @@ class _EdekaWithNewTasksState extends State<EdekaWithNewTasks> {
                 ],
               ),
             ),
-            Container(
-              width: 400,
-              height: 42,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.2),
-                    spreadRadius: 2,
-                    blurRadius: 5,
-                    offset: const Offset(0, -2),
-                  ),
-                ],
-              ),
-              child: Padding(
-                padding: const EdgeInsets.only(left: 10),
-                child: Row(
-                  children: [
-                    const Text(
-                      'Total: ',
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.grey),
-                    ),
-                    const SizedBox(
-                      width: 50,
-                    ),
-                    Text(
-                      '\$${totalAmount.toStringAsFixed(2)}',
-                      style: const TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 55,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            content: Text('Cart tapped!'),
-                          ),
-                        );
-                      },
-                      child: Container(
-                        width: 150,
-                        height: 100,
-                        decoration: BoxDecoration(
-                          color: const Color(0xff0380f6),
-                          borderRadius: BorderRadius.circular(7),
-                        ),
-                        child: const Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Cart",
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 25),
-                            ),
-                            SizedBox(
-                              width: 15,
-                            ),
-                            Icon(
-                              Icons.shopping_cart,
-                              color: Colors.white,
-                              size: 25,
-                            ),
-                          ],
-                        ),
-                      ),
+            GestureDetector(
+              onTap: () {
+                // Increment the total amount on tap
+                setState(() {
+                  totalAmount += 1.0;
+                });
+              },
+              child: Container(
+                width: 400,
+                height: 42,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 2,
+                      blurRadius: 5,
+                      offset: const Offset(0, -2),
                     ),
                   ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 10),
+                  child: Row(
+                    children: [
+                      const Text(
+                        'Total: ',
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        '\$${totalAmount.toStringAsFixed(2)}',
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.remove),
+                        onPressed: () {
+                          // Decrement the total amount
+                          setState(() {
+                            counter--;
+                          });
+                        },
+                      ),
+                      Text("$counter"),
+                      IconButton(
+                        icon: Icon(Icons.add),
+                        onPressed: () {
+                          setState(() {
+                            counter++;
+                          });
+                        },
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text('Cart tapped!'),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          width: 150,
+                          height: 100,
+                          decoration: BoxDecoration(
+                            color: const Color(0xff0380f6),
+                            borderRadius: BorderRadius.circular(7),
+                          ),
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Cart",
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 25),
+                              ),
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Icon(
+                                Icons.shopping_cart,
+                                color: Colors.white,
+                                size: 25,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             )
