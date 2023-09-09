@@ -69,7 +69,7 @@ class _EdekaWithNewTasksState extends State<EdekaWithNewTasks> {
     },
   ];
   bool isFavourite = true;
-  double totalAmount = 0.0; // Variable to track the total amount
+  double totalAmount = 0.0;
   int counter = 0;
 
   // Function to update the total amount when an item is added
@@ -243,10 +243,8 @@ class _EdekaWithNewTasksState extends State<EdekaWithNewTasks> {
                                             : Colors.black,
                                       ),
                                       onPressed: () {
-                                        setState(() {
-                                          isFavourite =
-                                              !isFavourite; // Toggle favorite status
-                                        });
+                                        isFavourite = !isFavourite;
+                                        setState(() {});
                                       },
                                     ),
                                   ],
@@ -329,7 +327,6 @@ class _EdekaWithNewTasksState extends State<EdekaWithNewTasks> {
                                             icon: const Icon(Icons.add),
                                             color: Colors.white,
                                             onPressed: () {
-                                              // Call the addToTotal function to update the total amount
                                               addToTotal(itemPrice);
                                             },
                                           ),
