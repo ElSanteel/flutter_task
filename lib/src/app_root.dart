@@ -17,30 +17,33 @@ import '../screens/Session_2_Flutter_Task/screen_5.dart';
 import '../screens/Session_2_Flutter_Task/screen_6.dart';
 import '../screens/Session_4_Flutter_Practise/trying_setstate.dart';
 import '../screens/Session_4_Flutter_Task/edeka_screen_with_new_tasks.dart';
+import '../screens/Session_5_Flutter_Task/bmi_calculator_screen.dart';
 
 class AppRoot extends StatelessWidget {
   const AppRoot({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        debugShowCheckedModeBanner: false,
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
 
-        // home: HomeScreen(),
-        // home: FourSquares(),
-        // home: EgyptFlag(),
-        // home: EgyptFlag2(),
-        // home: Circle(),
-        // home: Triangle(),
-        // home: GradientBackground(),
-        // home: Screen1(),
-        // home: Screen2(),
-        // home: Screen3(),
-        // home: Screen4(),
-        // home: Screen5(),
-        // home: Screen6()),
-        // home: TryingSetState(),
-        // home: Edeka(),
-        home: EdekaWithNewTasks());
+      // home: HomeScreen(),
+      // home: FourSquares(),
+      // home: EgyptFlag(),
+      // home: EgyptFlag2(),
+      // home: Circle(),
+      // home: Triangle(),
+      // home: GradientBackground(),
+      // home: Screen1(),
+      // home: Screen2(),
+      // home: Screen3(),
+      // home: Screen4(),
+      // home: Screen5(),
+      // home: Screen6()),
+      // home: TryingSetState(),
+      // home: Edeka(),
+      // home: EdekaWithNewTasks(),
+      home: BmiCalculatorScreen(),
+    );
   }
 }
