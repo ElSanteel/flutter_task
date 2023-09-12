@@ -2,16 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../../models/session 5/BMIModel.dart';
 
-class ResultScreen extends StatefulWidget {
-  final BMIModel bmiModel;
-
+class ResultScreen extends StatelessWidget {
   const ResultScreen({Key? key, required this.bmiModel}) : super(key: key);
-
-  @override
-  State<ResultScreen> createState() => ResultScreenState();
-}
-
-class ResultScreenState extends State<ResultScreen> {
+  final BMIModel bmiModel;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,15 +41,15 @@ class ResultScreenState extends State<ResultScreen> {
                     height: 60,
                   ),
                   Text(
-                    widget.bmiModel.getBMIStatus(), // Get BMI status
-                    style: TextStyle(
-                        color: widget.bmiModel.getBMIColor(), fontSize: 35),
+                    bmiModel.getBMIStatus(),
+                    style:
+                        TextStyle(color: bmiModel.getBMIColor(), fontSize: 35),
                   ),
                   const SizedBox(
                     height: 150,
                   ),
                   Text(
-                    widget.bmiModel.result.toString(),
+                    bmiModel.result.toString(),
                     style: const TextStyle(color: Colors.white, fontSize: 35),
                   ),
                 ],

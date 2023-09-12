@@ -32,7 +32,7 @@ class BMIModel {
     String status = getBMIStatus();
     switch (status) {
       case "Underweight":
-        return Colors.blue; // Choose the color you prefer
+        return Colors.blue;
       case "Normal":
         return Colors.green;
       case "Overweight":
@@ -40,7 +40,7 @@ class BMIModel {
       case "Obese":
         return Colors.red;
       default:
-        return Colors.white; // Default color if status is N/A
+        return Colors.white;
     }
   }
 }
