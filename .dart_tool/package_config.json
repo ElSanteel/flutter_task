@@ -39,9 +39,9 @@
     },
     {
       "name": "cupertino_icons",
-      "rootUri": "file:///C:/Users/alsan/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/cupertino_icons-1.0.5",
+      "rootUri": "file:///C:/Users/alsan/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/cupertino_icons-1.0.6",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.19"
     },
     {
       "name": "fake_async",
@@ -237,9 +237,9 @@
     },
     {
       "name": "xdg_directories",
-      "rootUri": "file:///C:/Users/alsan/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/xdg_directories-1.0.2",
+      "rootUri": "file:///C:/Users/alsan/AppData/Local/Pub/Cache/hosted/pub.flutter-io.cn/xdg_directories-1.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "2.19"
     },
     {
       "name": "session_10",
@@ -248,7 +248,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-09-13T15:41:40.970819Z",
+  "generated": "2023-09-14T16:30:22.522089Z",
   "generator": "pub",
   "generatorVersion": "3.0.6"
 }

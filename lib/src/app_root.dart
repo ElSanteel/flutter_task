@@ -18,15 +18,20 @@ import '../screens/Session_2_Flutter_Task/screen_6.dart';
 import '../screens/Session_4_Flutter_Practise/trying_setstate.dart';
 import '../screens/Session_4_Flutter_Task/edeka_screen_with_new_tasks.dart';
 import '../screens/Session_5_Flutter_Task/bmi_calculator_screen.dart';
-import '../screens/Session_6_Flutter_Task/rock_paper_scissor_screen.dart';
+import '../screens/Session_6_Flutter_Task/Quiz_App/quiz_splash_screen.dart';
+import '../screens/Session_6_Flutter_Task/Rock_Paper_Scissor_App/rock_paper_scissor_screen.dart';
 
 class AppRoot extends StatelessWidget {
   const AppRoot({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute: '/splash',
+      routes: {
+        '/splash': (context) => const QuizSplashScreen(),
+      },
 
       // home: HomeScreen(),
       // home: FourSquares(),
@@ -45,7 +50,8 @@ class AppRoot extends StatelessWidget {
       // home: Edeka(),
       // home: EdekaWithNewTasks(),
       // home: BmiCalculatorScreen(),
-      home: RockPaperScissorScreen(),
+      // home: RockPaperScissorScreen(),
+      home: const QuizSplashScreen(),
     );
   }
 }
