@@ -33,7 +33,6 @@ class Question1ScreenState extends State<Question1Screen> {
           height: SizeConfig.screenHeight,
           child: Stack(
             children: [
-              // Background image
               Image.asset(
                 "assets/images/quiz_background.png",
                 width: double.infinity,

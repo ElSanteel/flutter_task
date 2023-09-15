@@ -1,25 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../bloc/bmi_cubit/bmi_cubit.dart';
 
 class HeightSliderWidget extends StatelessWidget {
-  double height;
-  var fun;
-
-  HeightSliderWidget(this.height, this.fun, {super.key});
+  const HeightSliderWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Slider(
-      min: 100.0,
-      max: 200.0,
-      //divisions: 100,
-      value: height,
-      activeColor: const Color(
-          0xff6200EE), // The color to use for the portion of the slider track that is active.
-      inactiveColor: const Color(
-          0xff979797), // The color for the inactive portion of the slider track.
-      thumbColor: const Color(0xffF10606),
-      label: height.round().toString(),
-      onChanged: fun,
+    return BlocConsumer<BmiCubit, BmiState>(
+      listener: (context, state) {
+        // TODO: implement listener
+      },
+      builder: (context, state) {
+        var cubit = BmiCubit.get(context);
+
+        return Slider(
+          min: 100.0,
+          max: 200.0,
+          divisions: 100,
+          value: cubit.bmiModel.height,
+          activeColor: const Color(0xff6200EE),
+          inactiveColor: const Color(0xff979797),
+          thumbColor: const Color(0xffF10606),
+          label: cubit.bmiModel.height.round().toString(),
+          onChanged: cubit.changeHeight,
+        );
+      },
     );
   }
 }

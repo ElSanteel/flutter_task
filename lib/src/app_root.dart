@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:session_10/screens/Session_2_Flutter_Practise/payment_card.dart';
 import 'package:session_10/screens/Session_3_Flutter_Task/edeka_screen.dart';
-
+import '../bloc/bmi_cubit/bmi_cubit.dart';
 import '../screens/Session_1_Flutter_Task/circle_inside_screen.dart';
 import '../screens/Session_1_Flutter_Task//design_4.dart';
 import '../screens/Session_1_Flutter_Task//egypt_flag_method_number_1.dart';
@@ -26,32 +27,35 @@ class AppRoot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: '/splash',
-      routes: {
-        '/splash': (context) => const QuizSplashScreen(),
-      },
+    return MultiBlocProvider(
+      providers: [BlocProvider(create: (BuildContext context) => BmiCubit())],
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        // initialRoute: '/splash',
+        // routes: {
+        //   '/splash': (context) => const QuizSplashScreen(),
+        // },
 
-      // home: HomeScreen(),
-      // home: FourSquares(),
-      // home: EgyptFlag(),
-      // home: EgyptFlag2(),
-      // home: Circle(),
-      // home: Triangle(),
-      // home: GradientBackground(),
-      // home: Screen1(),
-      // home: Screen2(),
-      // home: Screen3(),
-      // home: Screen4(),
-      // home: Screen5(),
-      // home: Screen6()),
-      // home: TryingSetState(),
-      // home: Edeka(),
-      // home: EdekaWithNewTasks(),
-      // home: BmiCalculatorScreen(),
-      // home: RockPaperScissorScreen(),
-      home: const QuizSplashScreen(),
+        // home: HomeScreen(),
+        // home: FourSquares(),
+        // home: EgyptFlag(),
+        // home: EgyptFlag2(),
+        // home: Circle(),
+        // home: Triangle(),
+        // home: GradientBackground(),
+        // home: Screen1(),
+        // home: Screen2(),
+        // home: Screen3(),
+        // home: Screen4(),
+        // home: Screen5(),
+        // home: Screen6()),
+        // home: TryingSetState(),
+        // home: Edeka(),
+        // home: EdekaWithNewTasks(),
+        home: BmiCalculatorScreen(),
+        // home: RockPaperScissorScreen(),
+        // home: const QuizSplashScreen(),
+      ),
     );
   }
 }
